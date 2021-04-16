@@ -68,4 +68,7 @@ def fetch_item(url:str):
     soup = bs(res.text, "html.parser")
     item_title_elm = soup.select_one(".item_title")        
     print(f"タイトル:{item_title_elm.text}")
-    
+
+
+if __name__ == "__main__":
+    fetch_all_item()
